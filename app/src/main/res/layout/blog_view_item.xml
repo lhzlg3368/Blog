@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/blog_item_height"
+    android:layout_marginStart="@dimen/common_padding"
+    android:layout_marginTop="@dimen/common_padding"
+    android:layout_marginEnd="@dimen/common_padding"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/card_corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blog_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/blog_title"
+            style="@style/text_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/common_padding"
+            android:paddingEnd="@dimen/common_padding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/blog_title"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/blog_date"
+            style="@style/text_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/common_padding"
+            android:paddingEnd="@dimen/blog_data_right"
+            android:paddingBottom="@dimen/common_padding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/blog_date"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blog_next"
+            android:layout_width="@dimen/next_len"
+            android:layout_height="@dimen/next_len"
+            android:layout_marginTop="@dimen/common_padding"
+            android:layout_marginEnd="@dimen/common_padding"
+            android:layout_marginBottom="@dimen/common_padding"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
